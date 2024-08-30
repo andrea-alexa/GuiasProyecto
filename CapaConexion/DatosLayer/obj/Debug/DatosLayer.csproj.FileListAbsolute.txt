@@ -4,3 +4,9 @@ C:\Users\andre\Desktop\capaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.Assem
 C:\Users\andre\Desktop\capaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\capaConexion\DatosLayer\obj\Debug\DatosLayer.dll
 C:\Users\andre\Desktop\capaConexion\DatosLayer\obj\Debug\DatosLayer.pdb
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\bin\Debug\DatosLayer.dll
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\bin\Debug\DatosLayer.pdb
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\obj\Debug\DatosLayer.dll
+C:\Users\andre\Desktop\Proyecto\capaConexion\DatosLayer\obj\Debug\DatosLayer.pdb

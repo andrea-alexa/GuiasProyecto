@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace capaConexion
+namespace DatosLayer
 {
-    internal class customer
+    public class customer
     {
+        public string CustomerID { get; set; }
         public String CompanyName { get; set; }
         public String ContactName { get; set; }
         public String ContactTitle { get; set; }
