@@ -1,0 +1,10 @@
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe.config
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.pdb
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.Form1.resources
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.Properties.Resources.resources
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.GenerateResource.cache
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.exe
+C:\Users\andre\OneDrive\Documentos\Programacion2\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.pdb
