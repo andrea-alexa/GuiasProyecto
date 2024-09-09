@@ -90,7 +90,6 @@
             this.btnOptenerTipado.TabIndex = 2;
             this.btnOptenerTipado.Text = "Optener datos tipados";
             this.btnOptenerTipado.UseVisualStyleBackColor = true;
-            this.btnOptenerTipado.Click += new System.EventHandler(this.btnOptenerTipado_Click);
             // 
             // GridTipado
             // 

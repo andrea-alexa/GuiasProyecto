@@ -10,7 +10,7 @@ namespace AccesoDatos
 {
     public class CustomerRepository
     {
-        public DataBase ObtenerTodos()
+        public DataTable ObtenerTodos()
         {
             DataTable dataTable = new DataTable();
 
