@@ -37,6 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarNT = new System.Windows.Forms.TextBox();
             this.btnBuscarNT = new System.Windows.Forms.Button();
+            this.btnBuscarT = new System.Windows.Forms.Button();
+            this.txtBuscarT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -131,11 +134,40 @@
             this.btnBuscarNT.UseVisualStyleBackColor = true;
             this.btnBuscarNT.Click += new System.EventHandler(this.btnBuscarNT_Click);
             // 
+            // btnBuscarT
+            // 
+            this.btnBuscarT.Location = new System.Drawing.Point(660, 575);
+            this.btnBuscarT.Name = "btnBuscarT";
+            this.btnBuscarT.Size = new System.Drawing.Size(112, 32);
+            this.btnBuscarT.TabIndex = 7;
+            this.btnBuscarT.Text = "Buscar";
+            this.btnBuscarT.UseVisualStyleBackColor = true;
+            this.btnBuscarT.Click += new System.EventHandler(this.btnBuscarT_Click);
+            // 
+            // txtBuscarT
+            // 
+            this.txtBuscarT.Location = new System.Drawing.Point(650, 528);
+            this.txtBuscarT.Name = "txtBuscarT";
+            this.txtBuscarT.Size = new System.Drawing.Size(137, 22);
+            this.txtBuscarT.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(550, 531);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Buscar cliente:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 655);
+            this.Controls.Add(this.btnBuscarT);
+            this.Controls.Add(this.txtBuscarT);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscarNT);
             this.Controls.Add(this.txtBuscarNT);
             this.Controls.Add(this.label1);
@@ -163,6 +195,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscarNT;
         private System.Windows.Forms.Button btnBuscarNT;
+        private System.Windows.Forms.Button btnBuscarT;
+        private System.Windows.Forms.TextBox txtBuscarT;
+        private System.Windows.Forms.Label label2;
     }
 }
 
