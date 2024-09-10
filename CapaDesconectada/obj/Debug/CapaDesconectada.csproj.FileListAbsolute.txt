@@ -15,3 +15,9 @@ C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\obj\Debug\Capa
 C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.exe
 C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesconectada.pdb
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe.config
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.exe
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\bin\Debug\CapaDesconectada.pdb
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\bin\Debug\AccesoDatos.dll
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\bin\Debug\AccesoDatos.pdb
+C:\Users\andre\Desktop\Proyecto\CapaDesconectada\CapaDesconectada\obj\Debug\CapaDesc.ABCBD388.Up2Date

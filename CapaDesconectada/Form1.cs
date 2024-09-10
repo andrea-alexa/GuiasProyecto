@@ -22,6 +22,11 @@ namespace CapaDesconectada
         {
             GridNoTipado.DataSource = customerRepository.ObtenerTodos();
         }
+
+        private void btnBuscarNT_Click(object sender, EventArgs e)
+        {
+            var cliente = customerRepository.ObtenerPorID(txtBuscarNT.Text);
+        }
         #endregion
         //-------------------------------------------------------------------------
         #region Tipado

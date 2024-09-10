@@ -34,6 +34,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnOptenerTipado = new System.Windows.Forms.Button();
             this.GridTipado = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBuscarNT = new System.Windows.Forms.TextBox();
+            this.btnBuscarNT = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridNoTipado)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -102,11 +105,40 @@
             this.GridTipado.Size = new System.Drawing.Size(413, 367);
             this.GridTipado.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(92, 534);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar cliente:";
+            // 
+            // txtBuscarNT
+            // 
+            this.txtBuscarNT.Location = new System.Drawing.Point(192, 531);
+            this.txtBuscarNT.Name = "txtBuscarNT";
+            this.txtBuscarNT.Size = new System.Drawing.Size(137, 22);
+            this.txtBuscarNT.TabIndex = 3;
+            // 
+            // btnBuscarNT
+            // 
+            this.btnBuscarNT.Location = new System.Drawing.Point(202, 578);
+            this.btnBuscarNT.Name = "btnBuscarNT";
+            this.btnBuscarNT.Size = new System.Drawing.Size(112, 32);
+            this.btnBuscarNT.TabIndex = 4;
+            this.btnBuscarNT.Text = "Buscar";
+            this.btnBuscarNT.UseVisualStyleBackColor = true;
+            this.btnBuscarNT.Click += new System.EventHandler(this.btnBuscarNT_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 563);
+            this.ClientSize = new System.Drawing.Size(922, 655);
+            this.Controls.Add(this.btnBuscarNT);
+            this.Controls.Add(this.txtBuscarNT);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -116,6 +148,7 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridTipado)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,6 +160,9 @@
         private System.Windows.Forms.DataGridView GridTipado;
         private System.Windows.Forms.Button btnObtenerNoTipado;
         private System.Windows.Forms.Button btnOptenerTipado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBuscarNT;
+        private System.Windows.Forms.Button btnBuscarNT;
     }
 }
 
