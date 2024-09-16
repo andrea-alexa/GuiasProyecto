@@ -53,7 +53,7 @@ namespace AccesoDatos
                 SelectForID = SelectForID + "      ,[Phone] " + "\n";
                 SelectForID = SelectForID + "      ,[Fax] " + "\n";
                 SelectForID = SelectForID + "  FROM [dbo].[Customers] " + "\n";
-                SelectForID = SelectForID + "  WHERE CustomerID = '@CustomerID'";
+                SelectForID = SelectForID + "  WHERE CustomerID = @CustomerID";
 
                 using (SqlCommand comando = new SqlCommand(SelectForID, conexion))
                 {
@@ -84,6 +84,39 @@ namespace AccesoDatos
                 customer.Fax = fila.Field<String>("Fax");
             }
             return customer;
+        }
+
+        public int InsertarCliente(Customer cliente)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+                String InsertInto = "";
+                InsertInto = InsertInto + "INSERT INTO [dbo].[Customers] " + "\n";
+                InsertInto = InsertInto + "           ([CustomerID] " + "\n";
+                InsertInto = InsertInto + "           ,[CompanyName] " + "\n";
+                InsertInto = InsertInto + "           ,[ContactName] " + "\n";
+                InsertInto = InsertInto + "           ,[ContactTitle] " + "\n";
+                InsertInto = InsertInto + "           ,[Address]) " + "\n";
+                InsertInto = InsertInto + "     VALUES " + "\n";
+                InsertInto = InsertInto + "           (@CustomerID " + "\n";
+                InsertInto = InsertInto + "           ,@CompanyName " + "\n";
+                InsertInto = InsertInto + "           ,@ContactName " + "\n";
+                InsertInto = InsertInto + "           ,@ContactTitle " + "\n";
+                InsertInto = InsertInto + "           ,@Address)";
+
+                using (var comando = new SqlCommand(InsertInto, conexion))
+                {
+                    comando.Parameters.AddWithValue("CustomerID", cliente.CustomerID);
+                    comando.Parameters.AddWithValue("CompanyName", cliente.CompanyName);
+                    comando.Parameters.AddWithValue("ContactName", cliente.ContactName);
+                    comando.Parameters.AddWithValue("ContactTitle", cliente.ContactTitle);
+                    comando.Parameters.AddWithValue("Address", cliente.Address);
+
+                    SqlDataAdapter adaptador = new SqlDataAdapter(comando);
+                    adaptador.InsertCommand = comando;
+                    return adaptador.InsertCommand.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
