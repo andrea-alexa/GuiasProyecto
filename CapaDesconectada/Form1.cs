@@ -15,6 +15,22 @@ namespace CapaDesconectada
 {
     public partial class Form1 : Form
     {
+        private void RellenarForm(Customer cliente)
+        {
+            if (cliente != null)
+            {
+                txtCustomerID.Text = cliente.CustomerID;
+                txtCompanyName.Text = cliente.CompanyName;
+                txtContactName.Text = cliente.ContactName;
+                txtContactTitle.Text = cliente.ContactTitle;
+                txtAddress.Text = cliente.Address;
+            }
+            if (cliente == null)
+            {
+                MessageBox.Show("objeto null");
+            }
+        }
+
         #region No Tipado
         private CustomerRepository customerRepository = new CustomerRepository();
 
@@ -26,6 +42,8 @@ namespace CapaDesconectada
         private void btnBuscarNT_Click(object sender, EventArgs e)
         {
             var cliente = customerRepository.ObtenerPorID(txtBuscarNT.Text);
+
+            RellenarForm(cliente);
             if (cliente == null)
             {
                 MessageBox.Show("El objeto es null");
@@ -54,12 +72,14 @@ namespace CapaDesconectada
                 ContactTitle = txtContactTitle.Text,
                 Address = txtAddress.Text
             };
-            MessageBox.Show(cliente.CustomerID);
-            MessageBox.Show(cliente.CompanyName);
-            MessageBox.Show(cliente.ContactName);
-            MessageBox.Show(cliente.ContactTitle);
-            MessageBox.Show(cliente.Address);
             return cliente;
+        }
+
+        private void btnActualizarNT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            var actualizadas = customerRepository.ActualizarCliente(cliente);
+            MessageBox.Show($"{actualizadas} filas actualizadas");
         }
         #endregion
         //-------------------------------------------------------------------------
@@ -79,6 +99,13 @@ namespace CapaDesconectada
                 var objeto1 = customerRepository.ExtraerInformacionCliente(customer);
                 Console.WriteLine(customer);
             }
+        }
+
+        private void btnInsertarT_Click(object sender, EventArgs e)
+        {
+            var cliente = CrearCliente();
+            int insertados = adaptador.Insert(cliente.CustomerID, cliente.CompanyName, cliente.ContactName, cliente.ContactTitle, cliente.Address, cliente.City, cliente.Region, cliente.PostalCode, cliente.Country, cliente.Phone, cliente.Fax);
+            MessageBox.Show($"{insertados} resgistros insertados");
         }
         #endregion
 
